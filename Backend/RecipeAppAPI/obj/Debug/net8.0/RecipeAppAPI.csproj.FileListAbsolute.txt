@@ -214,7 +214,6 @@ C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\obj\Debug\
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RecipeAppAPI.props
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RecipeAppAPI.props
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\obj\Debug\net8.0\RecipeAp.3DBF81B7.Up2Date
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\obj\Debug\net8.0\RecipeAppAPI.dll
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\obj\Debug\net8.0\refint\RecipeAppAPI.dll
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\obj\Debug\net8.0\RecipeAppAPI.pdb
@@ -308,3 +307,5 @@ C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\bin\Debug\
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\RecipeAppAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\backend\recipeappapi\obj\Debug\net8.0\recipeappapi.sourcelink.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\backend\recipeappapi\obj\Debug\net8.0\recipeap.887E4879.Up2Date

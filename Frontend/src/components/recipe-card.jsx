@@ -1,24 +1,29 @@
 import PropTypes from "prop-types"; // PropTypes for validation
-import { FaHeart } from "react-icons/fa"; // Heart icon for the like button
-import { Link } from "react-router-dom";
+import { useState } from 'react';
 
-const RecipeCard = ({ id, image, title, reviews }) => {
+const RecipeCard = ({ image, title, reviews }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className="recipe-card">
+    <div
+      className={`recipe-card ${isHovered ? 'hovered' : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div className="image-container">
-        <img src={image} alt={title} className="recipe-image" />
-        <button className="like-button">
-          <FaHeart />
+        <img className="recipe-image" src={image} alt={title} />
+        <button className="favorite-btn">
+          <i className="fa fa-heart"></i>
         </button>
       </div>
-      <h3 className="recipe-title">{title}</h3>
-      <p className="recipe-reviews">{reviews} reviews</p>
-      <Link to={`/recipe/${id}`} className="view-recipe-btn">
-        View Recipe
-      </Link>
+      <div className="recipe-info">
+        <h3 className="recipe-title">{title}</h3>
+        <p className="recipe-reviews">{reviews} reviews</p>
+      </div>
     </div>
   );
 };
+
 
 // PropTypes for validation
 RecipeCard.propTypes = {

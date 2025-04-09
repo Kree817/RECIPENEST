@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "RecipeAppAPI/1.0.0": {
+      "recipeappapi/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "Microsoft.EntityFrameworkCore": "9.0.3",
@@ -17,7 +17,7 @@
           "Swashbuckle.AspNetCore": "8.1.0"
         },
         "runtime": {
-          "RecipeAppAPI.dll": {}
+          "recipeappapi.dll": {}
         }
       },
       "BCrypt.Net-Core/1.6.0": {
@@ -714,7 +714,7 @@
     }
   },
   "libraries": {
-    "RecipeAppAPI/1.0.0": {
+    "recipeappapi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
