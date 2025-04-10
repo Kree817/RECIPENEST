@@ -31,9 +31,10 @@ const SignupForm = () => {
       formData.append("password", password);
       formData.append("picture", defaultImage); // Using default image if no image is uploaded
 
-      const response = await axios.post("https://localhost:7251/api/user/register", formData, {
+      const response = await axios.post("https://localhost:7251/api/user", formData, {
         headers: {
-          "Content-Type": "multipart/form-data",
+          // "Content-Type": "multipart/form-data",
+          "Content-Type": "application/json",
         },
       });
 
