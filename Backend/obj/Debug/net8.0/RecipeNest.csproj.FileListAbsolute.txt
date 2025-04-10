@@ -1,0 +1,111 @@
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\appsettings.json
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\RecipeNest.staticwebassets.endpoints.json
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\RecipeNest.exe
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\RecipeNest.deps.json
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\RecipeNest.runtimeconfig.json
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\RecipeNest.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\RecipeNest.pdb
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lenovo\Desktop\RecipeNest\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\scopedcss\bundle\RecipeNest.styles.css
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets\msbuild.RecipeNest.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets\msbuild.RecipeNest.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets\msbuild.build.RecipeNest.props
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RecipeNest.props
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RecipeNest.props
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.csproj.Up2Date
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.dll
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\refint\RecipeNest.dll
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.pdb
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\RecipeNest.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\RecipeNest\obj\Debug\net8.0\ref\RecipeNest.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\appsettings.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\RecipeNest.staticwebassets.endpoints.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\RecipeNest.exe
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\RecipeNest.deps.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\RecipeNest.runtimeconfig.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\RecipeNest.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\RecipeNest.pdb
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.sourcelink.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\scopedcss\bundle\RecipeNest.styles.css
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets\msbuild.RecipeNest.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets\msbuild.RecipeNest.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets\msbuild.build.RecipeNest.props
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RecipeNest.props
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RecipeNest.props
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.csproj.Up2Date
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\refint\RecipeNest.dll
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.pdb
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\ref\RecipeNest.dll

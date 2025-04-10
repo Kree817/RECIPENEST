@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "../styles/signup.css";
+import { FaGoogle, FaFacebookF } from "react-icons/fa";
 
 const SignupForm = () => {
   const [fullName, setFullName] = useState("");
@@ -8,98 +9,69 @@ const SignupForm = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
 
   const handleSignup = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError(""); // Reset error before making request
+    setError("");
 
     if (password !== confirmPassword) {
-      setLoading(false);
       setError("Passwords do not match.");
       return;
     }
 
     try {
-      // Send POST request to the backend for registration
-      const response = await axios.post("http://localhost:5188/api/auth/register", {
-        fullName,
-        email,
-        password,
+      // Fetch the default profile image from the correct path
+      const imageResponse = await fetch("/public/assets/images/default-profile.png");
+      const blob = await imageResponse.blob();
+      const defaultImage = new File([blob], "default-profile.png", { type: "image/png" });
+
+      const formData = new FormData();
+      formData.append("fullName", fullName);
+      formData.append("email", email);
+      formData.append("password", password);
+      formData.append("picture", defaultImage); // Using default image if no image is uploaded
+
+      const response = await axios.post("https://localhost:7251/api/user/register", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
       });
 
-      // After successful registration, you can handle the response here.
       if (response.status === 200) {
-        alert("Registration successful!");
-        // Redirect to login page or show success message
+        alert("Signup successful!");
         window.location.href = "/login";
-      } else {
-        // Handle unexpected responses
-        setLoading(false);
-        setError("Registration failed. Please try again.");
       }
     } catch (err) {
-      // Catch and handle any errors (network issues, etc.)
-      setLoading(false);
-      setError(err.response?.data || "Failed to register. Please try again.");
+      setError(err.response?.data?.message || "Signup failed.");
     }
   };
 
   return (
     <div className="signup-container">
-      <form className="signup-form" onSubmit={handleSignup}>
-        <h2>Sign Up</h2>
+      <form className="signup-card" onSubmit={handleSignup}>
+        <h2>Create your Account</h2>
 
-        <div className="input-group">
-          <label>Full Name</label>
-          <input
-            type="text"
-            placeholder="Enter your full name"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className="input-group">
-          <label>Email</label>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className="input-group">
-          <label>Password</label>
-          <input
-            type="password"
-            placeholder="Create a password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className="input-group">
-          <label>Confirm Password</label>
-          <input
-            type="password"
-            placeholder="Confirm your password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-          />
-        </div>
-
-        <button type="submit" className="signup-btn" disabled={loading}>
-          {loading ? "Signing Up..." : "Sign Up"}
-        </button>
+        <input type="text" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
+        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+        <input type="password" placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
 
         {error && <p className="error">{error}</p>}
+
+        <button type="submit" className="signup-btn">SIGN UP</button>
+
+        <div className="divider">Or</div>
+
+        <div className="social-buttons">
+          <button type="button" className="social-btn google">
+            <FaGoogle /> Log in with Google
+          </button>
+          <button type="button" className="social-btn facebook">
+            <FaFacebookF /> Log in with Facebook
+          </button>
+        </div>
+
+        <p className="login-link">Already have an account? <a href="/login">Log in here</a></p>
       </form>
     </div>
   );

@@ -1,0 +1,6 @@
+@RecipeNest_HostAddress = http://localhost:5160
+
+GET {{RecipeNest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
