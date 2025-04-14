@@ -1,66 +1,77 @@
 import { useState } from "react";
-import authService from "../services/AuthService"; // Import the authService
-import "../styles/login.css";
+import axios from "axios";
+import "../style/login.css"; // Ensure correct path for the CSS file
+import { FaGoogle, FaFacebookF } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // Use React Router's navigate hook
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate(); // Used for programmatic navigation
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError(""); // Reset error before making the request
+    setError(""); // Reset error message
 
     try {
-      // Call the login method from authService
-      await authService.login(email, password);
-      
-      // Redirect user to the home/dashboard after successful login
-      window.location.href = "/dashboard"; // Change to the appropriate page
+      // Make login request (make sure the correct API URL is used)
+      const response = await axios.post("http://localhost:7251/api/auth/login", {
+        email,
+        password,
+      });
+
+      if (response.status === 200) {
+        // Store JWT token in localStorage (or sessionStorage) for session management
+        localStorage.setItem("authToken", response.data.token);
+
+        alert("Login successful!");
+        // Redirect user to dashboard or relevant page
+        navigate("/chef-dashboard"); 
+      }
     } catch (err) {
-      setLoading(false);
-      setError(err.message || "Failed to log in. Please check your credentials.");
+      console.error("Login error:", err);
+      setError(err.response?.data?.message || "Login failed.");
     }
   };
 
   return (
     <div className="login-container">
-      <form className="login-form" onSubmit={handleLogin}>
-        <h2>Login</h2>
-
-        <div className="input-group">
-          <label>Email</label>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className="input-group">
-          <label>Password</label>
-          <input
-            type="password"
-            placeholder="Enter your password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-
-        <button type="submit" className="login-btn" disabled={loading}>
-          {loading ? "Logging In..." : "Login"}
-        </button>
+      <form className="login-card" onSubmit={handleLogin}>
+        <h2>Log In to your Account</h2>
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
 
         {error && <p className="error">{error}</p>}
 
-        <div className="login-links">
-          <a href="/signup">Dont have an account? Sign Up</a>
+        <button type="submit" className="login-btn">CONTINUE</button>
+
+        <div className="divider">Or</div>
+
+        <div className="social-buttons">
+          <button type="button" className="social-btn google">
+            <FaGoogle /> Log in with Google
+          </button>
+          <button type="button" className="social-btn facebook">
+            <FaFacebookF /> Log in with Facebook
+          </button>
         </div>
+
+        <p className="signup-link">
+          New User? <a href="/chef-signup">SIGN UP HERE</a>
+        </p>
       </form>
     </div>
   );

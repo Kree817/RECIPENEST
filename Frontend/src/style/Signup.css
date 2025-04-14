@@ -1,0 +1,153 @@
+/* Signup Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/login-bg.jpg);
+  background-size: cover;  /* Ensure the background image covers the whole screen */
+  background-position: center;
+  background-attachment: fixed; /* Fixed background image */
+}
+
+/* Signup Card */
+.signup-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Max width for the card */
+  text-align: center;
+}
+
+/* Signup Header */
+.signup-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.signup-card input {
+  width: 100%;
+  max-width: 90%;
+  padding: 12px;
+  margin: 8px 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Signup Button */
+.signup-btn {
+  background-color: #fbbc05;
+  color: white;
+  padding: 12px;
+  margin: 12px 0px;
+  border: none;
+  border-radius: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.signup-btn:hover {
+  background-color: #f5a623;
+}
+
+/* Social Buttons */
+.social-buttons button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.social-btn.google {
+  background-color: #db4437;
+  color: white;
+}
+
+.social-btn.facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Signup Link */
+.login-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .signup-card {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .signup-container {
+    padding: 20px;  /* Add padding for smaller screens */
+  }
+
+  .signup-card h2 {
+    font-size: 1.5rem;  /* Reduce header size on smaller screens */
+  }
+
+  .signup-card input {
+    font-size: 0.9rem;  /* Slightly smaller font size */
+  }
+
+  .signup-btn {
+    font-size: 0.9rem;
+    padding: 10px;  /* Adjust button padding for smaller screens */
+  }
+
+  .social-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-card {
+    max-width: 95%;
+    padding: 15px; /* Adjust padding further for very small screens */
+  }
+
+  .signup-card h2 {
+    font-size: 1.2rem;  /* Further reduce font size for headers */
+  }
+
+  .signup-card input {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .signup-btn {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .social-btn {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import "../styles/signup.css";
+import "../style/signup.css";
 import { FaGoogle, FaFacebookF } from "react-icons/fa";
 
 const SignupForm = () => {
@@ -20,31 +20,43 @@ const SignupForm = () => {
     }
 
     try {
-      // Fetch the default profile image from the correct path
-      const imageResponse = await fetch("/public/assets/images/default-profile.png");
+      // Fetch default image and convert to Base64
+      const imageResponse = await fetch("/assets/images/default-profile.png");
       const blob = await imageResponse.blob();
-      const defaultImage = new File([blob], "default-profile.png", { type: "image/png" });
 
-      const formData = new FormData();
-      formData.append("fullName", fullName);
-      formData.append("email", email);
-      formData.append("password", password);
-      formData.append("picture", defaultImage); // Using default image if no image is uploaded
+      const base64Image = await convertBlobToBase64(blob);
 
-      const response = await axios.post("https://localhost:7251/api/user", formData, {
+      const data = {
+        fullName,
+        email,
+        password,
+        picture: base64Image, 
+      };
+
+      const response = await axios.post("http://localhost:7251/api/user", data, {
         headers: {
-          // "Content-Type": "multipart/form-data",
           "Content-Type": "application/json",
         },
       });
 
-      if (response.status === 200) {
+      if (response.status === 200 || response.status === 201) {
         alert("Signup successful!");
-        window.location.href = "/login";
+        window.location.href = "/login"; 
       }
     } catch (err) {
+      console.error("Signup error:", err);
       setError(err.response?.data?.message || "Signup failed.");
     }
+  };
+
+  // Convert Blob to Base64
+  const convertBlobToBase64 = (blob) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
   };
 
   return (

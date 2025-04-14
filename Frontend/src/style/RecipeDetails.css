@@ -1,0 +1,142 @@
+/* Recipe Section */
+.recipe-details-page {
+  font-family: 'poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 5%;
+  background-color: #fff;
+  gap: 40px;
+}
+
+/* LEFT SECTION */
+.recipe-left {
+  flex: 0 0 70%;
+}
+
+.recipe-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Info Boxes */
+.recipe-info-boxes {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.info-box {
+  background-color: #fbbc05;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.info-box a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Centered Main Image */
+.main-image-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-image-wrapper img {
+  width: 80%;
+  border-radius: 12px;
+}
+
+/* Description & Steps */
+.description, .steps {
+  margin-top: 30px;
+}
+
+.description h3, .steps h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.steps ol {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* RIGHT SECTION */
+.recipe-right {
+  flex: 1;
+  max-width: 25%;
+}
+
+/* Right Section Styling */
+.recent-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.recent-recipe-card {
+  /* background: #f9f9f9; */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); */
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.recent-recipe-card:hover {
+  transform: translateY(-5px);
+  .recent-recipe-name{
+    color: #fbbc05;}
+  }
+
+.recent-recipe-card img {
+  width: 40%;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.recent-info {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.recent-recipe-name {
+  font-family: 'poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+.recent-recipe-type {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.recent-recipe-date {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .recipe-details-page {
+    flex-direction: column;
+  }
+
+  .recipe-left, .recipe-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

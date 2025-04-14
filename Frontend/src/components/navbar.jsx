@@ -1,98 +1,61 @@
-import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { FaUser } from "react-icons/fa"; // Import user icon
-import "../styles/navbar.css";
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import '../style/Navbar.css'; 
+import logo from '../assets/logo.png';
+import { FaSearch, FaUserCircle, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const navigate = useNavigate();
 
-  // Adjust screen size on resize
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const handleLoginSignup = () => {
-    // Navigate to Login/Signup page
-    navigate("/login");
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="navbar">
-      {/* Mobile Navbar */}
-      {isMobile ? (
-        <div className="navbar-mobile">
-          <div className="nav-top">
-            {/* Logo */}
-            <div className="logo">
-              <h2>RecipeNest</h2>
-            </div>
+    <header className="navbar">
+      <div className="navbar-left">
+        <img src={logo} alt="Recipenest Logo" className="logo" />
+      </div>
 
-            {/* Hamburger Icon */}
-            <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-              ☰
-            </div>
-          </div>
+      <div className="search-bar">
+        <input type="text" placeholder="Find a recipe or ingredient" />
+        <button>
+          <FaSearch />
+        </button>
+      </div>
 
-          {/* Search Bar */}
-          <div className="search-row">
-            <input type="text" placeholder="Find a recipe" />
-            <button className="search-btn">🔍</button>
-          </div>
+      <div className="menu-toggle" onClick={toggleMenu}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </div>
 
-          {/* Mobile Menu Links */}
-          <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/chefs">Chefs</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
-              <li className="login-option" onClick={handleLoginSignup}>
-                <FaUser className="user-icon" />
-                <span>Login / Signup</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      ) : (
-        /* Desktop Navbar */
-        <div className="navbar-desktop">
-          <div className="nav-container">
-            {/* Logo */}
-            <div className="logo">
-              <h2>RecipeNest</h2>
-            </div>
+      <nav className={`navbar-right ${menuOpen ? 'open' : ''}`}>
+        <ul>
+          <li>
+            <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/chefs" className={({ isActive }) => (isActive ? 'active' : '')}>
+              Chefs
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/blog" className={({ isActive }) => (isActive ? 'active' : '')}>
+              Blog
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
+              Contact Us
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
 
-            {/* Desktop Navigation Links */}
-            <div className="nav-links">
-              <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/chefs">Chefs</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/contact">Contact Us</Link></li>
-              </ul>
-            </div>
-
-            {/* Search Bar */}
-            <div className="search-row">
-              <input type="text" placeholder="Find a recipe" />
-              <button className="search-btn">🔍</button>
-            </div>
-
-            {/* Login/Signup */}
-            <div className="login-option" onClick={handleLoginSignup}>
-              <FaUser className="user-icon" />
-              <span>Login / Signup</span>
-            </div>
-          </div>
-        </div>
-      )}
-    </nav>
+      <NavLink to="/login" className="login">
+        <FaUserCircle />
+        <span>Login/ Signup</span>
+      </NavLink>
+    </header>
   );
 };
 

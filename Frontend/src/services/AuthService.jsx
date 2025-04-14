@@ -1,18 +1,28 @@
-import axios from 'axios';
+import axios from "axios";
 
-const API_URL = 'http://localhost:5188/api/auth'; // Backend running on port 5188
+const BASE_URL = "http://localhost:7251/api";
 
-// Register user
-const register = async (name, email, password, confirmPassword) => {
-  try {
-    const response = await axios.post(`${API_URL}/register`, { name, email, password, confirmPassword });
-    return response.data; // Return success message or user data
-  } catch (error) {
-    console.error("Error during registration:", error);
-    throw new Error(error.response?.data || "Something went wrong during registration.");
-  }
+const authService = {
+  login: async (email, password) => {
+    const response = await axios.post(`${BASE_URL}/auth/login`, {
+      email,
+      password,
+    });
+    return response.data;
+  },
+
+  logout: () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+  },
+
+  getCurrentUser: () => {
+    return JSON.parse(localStorage.getItem("user"));
+  },
+
+  isAuthenticated: () => {
+    return !!localStorage.getItem("token");
+  },
 };
 
-export default {
-  register,
-};
+export default authService;
