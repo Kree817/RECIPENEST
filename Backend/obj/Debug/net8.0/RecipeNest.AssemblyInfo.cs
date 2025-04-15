@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipeNest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44381875a7902ebcd559b4c4220f898bb54a3874")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cd2e0e9044d7cf4bae49712bd0598f4b8612041")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipeNest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecipeNest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -109,6 +109,14 @@ C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\refint
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.pdb
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\RecipeNest.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\RecipeNest Final Project\Backend\obj\Debug\net8.0\ref\RecipeNest.dll
+C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.sourcelink.json
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\appsettings.json
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\RecipeNest.staticwebassets.endpoints.json
@@ -117,6 +125,7 @@ C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\Recipe
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\RecipeNest.runtimeconfig.json
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\RecipeNest.dll
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\RecipeNest.pdb
+C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\BCrypt.Net-Core.dll
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
@@ -140,14 +149,6 @@ C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\Swashb
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.AssemblyInfoInputs.cache
-C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.AssemblyInfo.cs
-C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\RecipeNest.sourcelink.json
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\scopedcss\bundle\RecipeNest.styles.css
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Lenovo\Desktop\RecipeNest-Final-Project\Backend\obj\Debug\net8.0\staticwebassets.development.json

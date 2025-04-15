@@ -1,8 +1,12 @@
-﻿using RecipeNest.Data;
-using RecipeNest.Models;
-using Microsoft.AspNetCore.Http;
+﻿using BCrypt.Net;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using RecipeNest.Data;
+using RecipeNest.Models;
+using RecipeNest.Services;
+using System.IO;
+using System.Threading.Tasks;
+using static RecipeNest.Models.Chef;
 
 namespace RecipeNest.Controllers
 {
@@ -11,33 +15,55 @@ namespace RecipeNest.Controllers
     public class ChefController : ControllerBase
     {
         private readonly RecipeDbContext _context;
-        private readonly IConfiguration _configuration;
 
-        public ChefController(RecipeDbContext context, IConfiguration configuration)
+        public ChefController(RecipeDbContext context)
         {
             _context = context;
-            _configuration = configuration;
         }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] Models.LoginRequest request)
+        // POST: api/Chef
+        [HttpPost]
+        public async Task<ActionResult<Chef>> PostChef([FromForm] ChefSignupRequest request)
         {
-            var user = await _context.Chef.FirstOrDefaultAsync(c => c.Email == request.Email);
+            // Check if required fields are provided
+            if (string.IsNullOrEmpty(request.FullName) || string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
+            {
+                return BadRequest("Full Name, Email, and Password are required.");
+            }
 
-            if (user == null || !user.VerifyPassword(request.Password))
-                return Unauthorized("Invalid credentials");
+            // Convert picture to byte array if provided
+            byte[] pictureBytes = null;
+            if (request.Picture != null)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    await request.Picture.CopyToAsync(memoryStream);
+                    pictureBytes = memoryStream.ToArray();
+                }
+            }
 
-            var secretKey = _configuration.GetSection("JwtSettings:SecretKey").Value;
-            var token = user.GenerateJwtToken(secretKey);
+            // Hash the password
+            var chef = new Chef
+            {
+                FullName = request.FullName,
+                Email = request.Email,
+                Bio = request.Bio,
+                Speciality = request.Speciality,
+                Password = AuthService.HashPassword(request.Password),
+                Picture = pictureBytes
+            };
 
-            return Ok(new { token });
-        }
+            // Check if chef already exists with the same email
+            var existingChef = await _context.Chef.FirstOrDefaultAsync(c => c.Email == chef.Email);
+            if (existingChef != null)
+            {
+                return Conflict("A chef with this email already exists.");
+            }
 
-        // GET: api/Chef
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Chef>>> GetChef()
-        {
-            return await _context.Chef.ToListAsync();
+            _context.Chef.Add(chef);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetChef), new { id = chef.Id }, chef);
         }
 
         // GET: api/Chef/5
@@ -52,45 +78,55 @@ namespace RecipeNest.Controllers
             return chef;
         }
 
-        // POST: api/Chef
-        [HttpPost]
-        public async Task<ActionResult<Chef>> PostChef(Chef chef)
-        {
-            chef.Password = Chef.HashPassword(chef.Password);
-
-            Console.WriteLine("🚀 Hashed Password: " + chef.Password);
-
-            _context.Chef.Add(chef);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetChef), new { id = chef.Id }, chef);
-        }
-
         // PUT: api/Chef/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutChef(int id, Chef chef)
+public async Task<IActionResult> UpdateChefProfile(int id, [FromForm] ChefProfileUpdateRequest request)
+{
+    var chef = await _context.Chef.FindAsync(id);
+    if (chef == null)
+    {
+        return NotFound("Chef not found.");
+    }
+
+    // Update profile fields
+    chef.FullName = request.FullName;
+    chef.Email = request.Email;
+    chef.Password = request.Password; // Hash the password if necessary
+    chef.Bio = request.Bio;
+    chef.Speciality = request.Speciality;
+
+    if (request.Picture != null)
+    {
+        using (var ms = new MemoryStream())
         {
-            if (id != chef.Id)
-                return BadRequest();
+            await request.Picture.CopyToAsync(ms);
+            chef.Picture = ms.ToArray(); // Save the picture as a byte array
+        }
+    }
 
-            // Hash the password before updating
-            chef.Password = Chef.HashPassword(chef.Password);
+    await _context.SaveChangesAsync();
 
-            _context.Entry(chef).State = EntityState.Modified;
+    return NoContent(); // Return success
+}
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ChefExists(id))
-                    return NotFound();
-                else
-                    throw;
-            }
 
-            return NoContent();
+        // GET: api/Chef
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Chef>>> GetAllChefs()
+        {
+            var chefs = await _context.Chef
+                .Select(c => new
+                {
+                    c.Id,
+                    c.FullName,
+                    c.Email,
+                    c.Bio,
+                    c.Speciality,
+                    Picture = c.Picture != null ? Convert.ToBase64String(c.Picture) : ""  // Convert byte[] to base64 if not null
+                })
+                .ToListAsync();
+
+            return Ok(chefs);
         }
 
         // DELETE: api/Chef/5
@@ -110,6 +146,17 @@ namespace RecipeNest.Controllers
         private bool ChefExists(int id)
         {
             return _context.Chef.Any(e => e.Id == id);
+        }
+
+        private async Task<byte[]> ConvertToBytesAsync(IFormFile file)
+        {
+            if (file == null) return null;
+
+            using (var ms = new MemoryStream())
+            {
+                await file.CopyToAsync(ms);
+                return ms.ToArray();
+            }
         }
     }
 }

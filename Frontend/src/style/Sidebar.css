@@ -21,4 +21,62 @@
     background-color: #fbbc05;
     color: white;
   }
+
+
+  /* Add these styles for the logout popup */
+.logout-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;  /* Ensure it appears above other content */
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-buttons {
+  margin-top: 20px;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #ddd;
+  color: black;
+  margin-left: 10px;
+}
+
+/* Add hover effect to buttons */
+.confirm-btn:hover {
+  background-color: #e63e3e;
+}
+
+.cancel-btn:hover {
+  background-color: #ccc;
+}
+
   

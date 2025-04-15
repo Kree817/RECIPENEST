@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";  // Import useNavigate
 import "../style/Recipe.css";
 import { FaHeart } from "react-icons/fa";
 
@@ -8,7 +9,8 @@ const API_URL = "http://localhost:7251/api/recipe";
 const Recipe = () => {
   const [recipes, setRecipes] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const recipesPerPage = 4;
+  const recipesPerPage = 5;
+  const navigate = useNavigate();  // Use navigate for programmatic navigation
 
   // Fetch data from backend
   useEffect(() => {
@@ -37,13 +39,18 @@ const Recipe = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1);
   };
 
+  // Handle click to navigate to RecipeDetails page
+  const handleRecipeClick = (id) => {
+    navigate(`/recipe/${id}`);  // Navigate to the recipe details page with the recipe ID
+  };
+
   return (
     <section className="recipe-section">
       <h2 className="recipe-title">Top Recipes</h2>
 
       <div className="recipe-grid">
         {currentRecipes.map((recipe) => (
-          <div className="recipe-card" key={recipe.id}>
+          <div className="recipe-card" key={recipe.id} onClick={() => handleRecipeClick(recipe.id)}>
             <div className="image-wrapper">
               {/* Display recipe picture if available */}
               {recipe.picture && (
@@ -57,7 +64,7 @@ const Recipe = () => {
               </button>
             </div>
             <p className="recipe-name">{recipe.name}</p>
-            {/* <p className="recipe-reviews">By Chef {recipe.chefId}</p> */}
+            <p className="recipe-type">{recipe.type}</p>
           </div>
         ))}
       </div>
@@ -77,7 +84,7 @@ const Recipe = () => {
 
       {/* View All Button */}
       <div className="view-btn-wrapper">
-        <button className="view-all-btn">🍽 View All Recipes</button>
+        <button className="view-all-btn" onClick={() => navigate("/recipe-page")}>🍽 View All Recipes</button>
       </div>
     </section>
   );

@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Recipenest.Models;
 using RecipeNest.Data;
 using RecipeNest.Models;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace RecipeNest.Controllers
+namespace Recipenest.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -44,6 +48,11 @@ namespace RecipeNest.Controllers
                 Name = request.Name,
                 Ingredients = request.Ingredients,
                 Type = request.Type,
+                PrepTime = request.PrepTime,   // Adding new field
+                CookingTime = request.CookingTime,   // Adding new field
+                PrepDescription = request.PrepDescription,  // Adding new field
+                CookingDescription= request.PrepDescription,
+                ChefId = request.ChefId,    // Adding new field
                 Picture = await ConvertToBytesAsync(request.Picture)
             };
 
@@ -67,6 +76,11 @@ namespace RecipeNest.Controllers
             recipe.Name = request.Name;
             recipe.Ingredients = request.Ingredients;
             recipe.Type = request.Type;
+            recipe.PrepTime = request.PrepTime;   // Updating the new field
+            recipe.CookingTime = request.CookingTime;   // Updating the new field
+            recipe.PrepDescription = request.PrepDescription;  // Updating the new field
+            recipe.CookingDescription = request.CookingDescription;  // Updating the new field
+            recipe.ChefId = request.ChefId;    // Updating the new field
 
             if (request.Picture != null)
             {
@@ -102,7 +116,6 @@ namespace RecipeNest.Controllers
                 return ms.ToArray();
             }
         }
-
 
         private bool RecipeExists(int id)
         {

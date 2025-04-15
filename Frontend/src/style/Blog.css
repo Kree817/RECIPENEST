@@ -1,10 +1,10 @@
-.news-section {
+.blogs-section {
     text-align: center;
     padding: 60px 20px;
     background-color: #fff;
   }
   
-  .news-subtitle {
+  .blogs-subtitle {
     font-family: 'Georgia', serif;
     color: #b89b55;
     font-style: italic;
@@ -12,21 +12,21 @@
     margin-bottom: 5px;
   }
   
-  .news-title {
+  .blogs-title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
     font-family: 'Arial', sans-serif;
   }
   
-  .news-description {
+  .blogs-description {
     font-size: 1rem;
     color: #555;
     max-width: 700px;
     margin: 0 auto 40px;
   }
   
-  .news-grid {
+  .blogs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
@@ -34,7 +34,7 @@
     margin: 0 auto;
   }
   
-  .news-card {
+  .blogs-card {
     background: #f9f9f9;
     border-radius: 12px;
     overflow: hidden;
@@ -42,17 +42,17 @@
     text-align: left;
   }
   
-  .news-image {
+  .blogs-image {
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
   }
   
-  .news-content {
+  .blogs-content {
     padding: 20px;
   }
   
-  .news-tag {
+  .blogs-tag {
     background-color: #a3c14a;
     color: white;
     font-size: 0.75rem;
@@ -63,13 +63,13 @@
     margin-bottom: 10px;
   }
   
-  .news-heading {
+  .blogs-heading {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 10px;
   }
   
-  .news-meta {
+  .blogs-meta {
     font-size: 0.85rem;
     color: #777;
     display: flex;

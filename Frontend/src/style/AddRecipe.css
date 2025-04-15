@@ -1,0 +1,101 @@
+.add-recipe-container {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  .add-recipe-form {
+    flex: 1;
+    max-width: 75%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+  }
+  
+  .add-recipe-form h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .image-preview {
+    margin-top: 10px;
+  }
+  
+  .preview-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .save-btn, .cancel-btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: #fbbc05;
+    color: white;
+    border: none;
+  }
+  
+  .save-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .cancel-btn {
+    background-color: #ddd;
+    color: black;
+    border: none;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #bbb;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .add-recipe-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .add-recipe-form {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,23 +1,25 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "../style/Chefs.css";  // Assuming this file contains the necessary styling
-import { FaHeart } from "react-icons/fa";
 import chefImage from "../assets/chef1.jpeg"; // Default image if not available in DB
+import { useNavigate} from "react-router-dom";
 
 const API_URL = "http://localhost:7251/api/chef"; // Your backend API URL to fetch chefs
 
 const Chefs = () => {
+  const navigate = useNavigate(); // Initialize navigate from useNavigate hook
   const [chefs, setChefs] = useState([]);
   const [loading, setLoading] = useState(true);  // Add a loading state
   const [error, setError] = useState(null);      // Add an error state
   const [currentPage, setCurrentPage] = useState(1); // Current page for pagination
-  const [chefsPerPage] = useState(4); // Number of chefs to display per page
+  const [chefsPerPage] = useState(5); // Number of chefs to display per page
 
   useEffect(() => {
     // Fetch chefs data from the API
     const fetchChefs = async () => {
       try {
         const response = await axios.get(API_URL);
+        console.log("Fetched Chefs Data:", response.data); // Log the full response data to check structure
         setChefs(response.data);  // Set chefs data to state
         setLoading(false);         // Set loading to false when data is fetched
       } catch (error) {
@@ -61,7 +63,7 @@ const Chefs = () => {
 
   return (
     <section className="chefs-section">
-      <h2 className="chefs-title">Top Chefs</h2>
+      <h2 className="chef-title">Top Chefs</h2>
       <div className="chefs-grid">
         {/* Loop through the chefs array and display each chef */}
         {currentChefs.map((chef) => (
@@ -70,14 +72,15 @@ const Chefs = () => {
               {/* Display chef's picture if available */}
               <img
                 src={chef.picture ? `data:image/jpeg;base64,${chef.picture}` : chefImage} // Use base64 image if available, else use default
-                alt={chef.fullname}
+                alt={chef.fullName}
                 className="chef-image"
               />
-              <button className="chef-fav-icon">
-                <FaHeart />
-              </button>
             </div>
-            <p className="chef-name">{chef.fullname}</p>
+
+            {/* Ensure the chef's name is rendered properly */}
+            <p className="chef-name">
+              {chef.fullName ? chef.fullName : "No name available"}  {/* Update field name */}
+            </p>
             <p className="chef-speciality">{chef.speciality}</p>
             {/* <p className="chef-bio">{chef.bio}</p> */}
           </div>
@@ -99,7 +102,7 @@ const Chefs = () => {
 
       {/* Button to view all chefs */}
       <div className="chefs-btn-wrapper">
-        <button className="chefs-btn">🍳 View All CHEFS</button>
+        <button className="chefs-btn" onClick={() => navigate("/chef-page")}>🍳 View All CHEFS</button>
       </div>
     </section>
   );

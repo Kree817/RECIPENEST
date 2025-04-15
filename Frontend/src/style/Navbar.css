@@ -1,20 +1,20 @@
-/* ============================
-   Base Styles
-============================ */
+/* Navbar Container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 20px ;
+  padding: 0 20px;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   font-family: 'Arial', sans-serif;
   position: sticky;
   top: 0;
   z-index: 1000;
+  max-width: 100vw;
 }
 
+/* Left section with logo */
 .navbar-left {
   display: flex;
   align-items: center;
@@ -26,19 +26,7 @@
   margin-right: 10px;
 }
 
-/* .brand-text h1 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.brand-text p {
-  margin: 0;
-  font-size: 10px;
-  color: #666;
-  letter-spacing: 1px;
-} */
-
+/* Search Bar */
 .search-bar {
   display: flex;
   flex: 1;
@@ -67,6 +55,15 @@
   align-items: center;
 }
 
+.search-bar button:hover {
+  background-color: #e96d00;
+}
+
+.search-bar input::placeholder {
+  color: #bbb;
+}
+
+/* Navbar Items */
 .navbar-right {
   display: flex;
   align-items: center;
@@ -94,31 +91,60 @@
   color: #f4a825;
 }
 
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
 
+.menu-toggle svg {
+  font-size: 24px;
+  color: #333;
+}
+
+/* User Profile Section */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-profile img {
+  border-radius: 50%;   /* Makes the image circular */
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.user-profile .username {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-profile span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-profile .user-image {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Login/Signup Link */
 .login {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: #c44c1d;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-/* ============================
-   Hamburger / Close Icon
-============================ */
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
+  gap: 10px;
+  font-size: 14px;
   color: #333;
-  margin-left: auto;
+  text-decoration: none;
 }
 
-/* ============================
-   Responsive Styles
-============================ */
-@media screen and (max-width: 768px) {
+/* For small screens */
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -162,18 +188,19 @@
     width: 100%;
   }
 
-  .login {
-    margin-top: 10px;
+  .user-profile img {
+    width: 30px;
+    height: 30px;
   }
+}
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-5%);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

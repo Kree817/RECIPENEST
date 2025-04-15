@@ -1,0 +1,128 @@
+.chef-edit-profile-container {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+.chef-profile-form {
+  flex: 1;
+  max-width: 75%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.chef-profile-form h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.profile-picture {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.change-img-icon {
+  background-color: #fbbc05;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.save-btn, .cancel-btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-btn {
+  background-color: #fbbc05;
+  color: white;
+  border: none;
+}
+
+.save-btn:hover {
+  background-color: #e0a800;
+}
+
+.cancel-btn {
+  background-color: #ddd;
+  color: black;
+  border: none;
+}
+
+.cancel-btn:hover {
+  background-color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chef-edit-profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chef-profile-form {
+    max-width: 100%;
+  }
+}

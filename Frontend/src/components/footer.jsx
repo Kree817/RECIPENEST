@@ -1,7 +1,6 @@
-import React from "react";
 import "../style/Footer.css";
 import footerBg from "../assets/footerimg.jpeg";
-import { FaFacebookF, FaTwitter, FaInstagram, FaDribbble } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -26,8 +25,8 @@ const Footer = () => {
               <li><a href="/">Home</a></li>
               <li><a href="/about">About us</a></li>
               <li><a href="/blogs">Blogs</a></li>
-              <li><a href="/terms">Terms Of Service</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/contact">Contact us</a></li>
+              <li><a href="/help-page">Help</a></li>
             </ul>
           </div>
 
@@ -38,7 +37,6 @@ const Footer = () => {
               <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /> Facebook</a></li>
               <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /> Twitter</a></li>
               <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a></li>
-              <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer"><FaDribbble /> Dribbble</a></li>
             </ul>
           </div>
 
