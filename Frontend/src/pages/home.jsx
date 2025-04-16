@@ -20,13 +20,12 @@ const Home = () => {
       >
         <div className="hero-content">
           <h1>
-            <span>Healthy</span>
+            <span>Welcome to the</span>
             <br />
-            <span>Smoothie</span>
+            <span>World of Recipes</span>
           </h1>
           <p>
-            Consectetur, adipisci velit, sed quia non numquam eius modi tempora
-            incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          Your ultimate source for amazing recipes and cooking inspiration from top chefs. Discover, learn, and cook with ease.
           </p>
 
           <button

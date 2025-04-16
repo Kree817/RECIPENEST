@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|c:\\users\\lenovo\\desktop\\recipenest-final-project\\backend\\controllers\\recipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|solutionrelative:controllers\\recipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|c:\\users\\lenovo\\desktop\\recipenest-final-project\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|c:\\users\\lenovo\\desktop\\recipenest-final-project\\backend\\recipenest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|solutionrelative:recipenest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
@@ -31,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|solutionrelative:models\\chefblog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|c:\\users\\lenovo\\desktop\\recipenest-final-project\\backend\\controllers\\recipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|solutionrelative:controllers\\recipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|c:\\users\\lenovo\\desktop\\recipenest-final-project\\backend\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|solutionrelative:models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|c:\\users\\lenovo\\desktop\\recipenest-final-project\\backend\\data\\recipedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|solutionrelative:data\\recipedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|c:\\users\\lenovo\\desktop\\recipenest-final-project\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{475F0FBA-B8CF-0100-F971-FA83325E764B}|RecipeNest.csproj|c:\\users\\lenovo\\desktop\\recipenest-final-project\\backend\\models\\userblog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,11 +97,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RecipeNest.http",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\RecipeNest.http",
               "RelativeDocumentMoniker": "RecipeNest.http",
@@ -109,38 +109,11 @@
               "RelativeToolTip": "RecipeNest.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-15T16:13:06.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T16:13:06.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:29:01.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChefBlog.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Models\\ChefBlog.cs",
-              "RelativeDocumentMoniker": "Models\\ChefBlog.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Models\\ChefBlog.cs",
-              "RelativeToolTip": "Models\\ChefBlog.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAswC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:08:49.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BlogController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Controllers\\BlogController.cs",
               "RelativeDocumentMoniker": "Controllers\\BlogController.cs",
@@ -148,25 +121,24 @@
               "RelativeToolTip": "Controllers\\BlogController.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAA0wFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:05:27.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T13:05:27.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "RecipeController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Controllers\\RecipeController.cs",
               "RelativeDocumentMoniker": "Controllers\\RecipeController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Controllers\\RecipeController.cs",
               "RelativeToolTip": "Controllers\\RecipeController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAkwH0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T01:10:03.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Recipe.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Models\\Recipe.cs",
               "RelativeDocumentMoniker": "Models\\Recipe.cs",
@@ -174,12 +146,11 @@
               "RelativeToolTip": "Models\\Recipe.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAmwBgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T04:22:14.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T04:22:14.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ChefController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Controllers\\ChefController.cs",
               "RelativeDocumentMoniker": "Controllers\\ChefController.cs",
@@ -187,12 +158,11 @@
               "RelativeToolTip": "Controllers\\ChefController.cs",
               "ViewState": "AgIAAJQAAAAAAAAAAAAAwJsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T04:14:10.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T04:14:10.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -200,51 +170,11 @@
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAQwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T17:12:05.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T17:12:05.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Chef.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Models\\Chef.cs",
-              "RelativeDocumentMoniker": "Models\\Chef.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Models\\Chef.cs",
-              "RelativeToolTip": "Models\\Chef.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAswCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T05:10:50.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Services\\AuthService.cs",
-              "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T17:33:35.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RecipeDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Data\\RecipeDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\RecipeDbContext.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Data\\RecipeDbContext.cs",
-              "RelativeToolTip": "Data\\RecipeDbContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:47:42.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -252,8 +182,67 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-10T05:29:39.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T05:29:39.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChefBlog.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Models\\ChefBlog.cs",
+              "RelativeDocumentMoniker": "Models\\ChefBlog.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Models\\ChefBlog.cs",
+              "RelativeToolTip": "Models\\ChefBlog.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:08:49.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T05:29:01.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Chef.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Models\\Chef.cs",
+              "RelativeDocumentMoniker": "Models\\Chef.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Models\\Chef.cs",
+              "RelativeToolTip": "Models\\Chef.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:10:50.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T17:33:35.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RecipeDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Data\\RecipeDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\RecipeDbContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\RecipeNest-Final-Project\\Backend\\Data\\RecipeDbContext.cs",
+              "RelativeToolTip": "Data\\RecipeDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T05:47:42.877Z"
             },
             {
               "$type": "Document",
@@ -265,8 +254,7 @@
               "RelativeToolTip": "Models\\UserBlog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:07:29.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T13:07:29.044Z"
             },
             {
               "$type": "Document",
@@ -278,8 +266,7 @@
               "RelativeToolTip": "Models\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T17:18:31.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T17:18:31.857Z"
             },
             {
               "$type": "Document",
@@ -291,8 +278,7 @@
               "RelativeToolTip": "Models\\ChefSignupRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T02:37:09.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T02:37:09.625Z"
             },
             {
               "$type": "Document",
@@ -304,8 +290,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA1wAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:31:59.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T05:31:59.506Z"
             },
             {
               "$type": "Document",

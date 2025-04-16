@@ -13,6 +13,8 @@
 .hero-content {
   color: #fff;
   max-width: 600px;
+  opacity: 0; /* Start with hidden content */
+  animation: fadeIn 1.5s ease-out forwards; /* Apply the fadeIn animation */
 }
 
 .hero-content h1 {
@@ -21,7 +23,7 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: #ffffff;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero-content p {
@@ -29,7 +31,6 @@
   line-height: 1.6;
   margin-bottom: 2rem;
   color: #ffffff;
-  
 }
 
 .cta-button {
@@ -49,6 +50,17 @@
 
 .cta-button:hover {
   background-color: #e0a800;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start invisible */
+    transform: translateY(30px); /* Start from below */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to normal position */
+  }
 }
 
 @media (max-width: 768px) {
