@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using RecipeNest.Data;
 using RecipeNest.Models;
+using RecipeNest.Services;
 
 namespace RecipeNest
 {
@@ -17,6 +18,8 @@ namespace RecipeNest
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services.AddDbContext<RecipeDbContext>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+            builder.Services.AddScoped<AdminAuthService>();
 
             // ✅ Add Controllers
             builder.Services.AddControllers();

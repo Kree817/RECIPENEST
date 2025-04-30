@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 import "../style/Home.css";
 import bgImage from "../assets/hero-bg.jpeg";
 import Recipe from "../components/Recipe";
@@ -8,7 +8,7 @@ import Blogs from "../components/Blogs";
 import ImageSlider from "../components/ImageSlider";
 
 const Home = () => {
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate(); 
 
   return (
     <div>
@@ -30,7 +30,7 @@ const Home = () => {
 
           <button
             className="cta-button"
-            onClick={() => navigate("/recipe-page")} // Correct the navigation function
+            onClick={() => navigate("/recipe-page")}
           >
             <span role="img" aria-label="fruit">
               🍑

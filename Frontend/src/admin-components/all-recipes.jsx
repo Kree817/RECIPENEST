@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Sidebar from "../admin-components/admin-sidebar";
+import AdminSidebar from "../admin-components/admin-sidebar";
 import "../style/MyRecipes.css";
 import axios from "axios";
 
@@ -7,12 +7,10 @@ const AllRecipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const chefId = localStorage.getItem("chefId"); // assuming chefId is stored on login
-
   useEffect(() => {
-    const fetchRecipes = async () => {
+    const fetchAllRecipes = async () => {
       try {
-        const response = await axios.get(`http://localhost:7251/api/recipe/chef/${chefId}`);
+        const response = await axios.get("http://localhost:7251/api/recipe");
         setRecipes(response.data);
       } catch (error) {
         console.error("Failed to fetch recipes:", error);
@@ -21,10 +19,8 @@ const AllRecipes = () => {
       }
     };
 
-    if (chefId) {
-      fetchRecipes();
-    }
-  }, [chefId]);
+    fetchAllRecipes();
+  }, []);
 
   const handleDelete = async (id) => {
     try {
@@ -35,9 +31,9 @@ const AllRecipes = () => {
     }
   };
 
-  const handleEdit = (id) => {
-    // Navigate to edit page or open modal (optional)
-    console.log(`Edit recipe with ID: ${id}`);
+  const handleBlock = (id) => {
+    console.log(`Block recipe with ID: ${id}`);
+    // Add your navigation/edit logic here
   };
 
   if (loading) {
@@ -46,9 +42,9 @@ const AllRecipes = () => {
 
   return (
     <div className="my-recipes-container">
-      <Sidebar isChef={true} />
+      <AdminSidebar isAdmin={true} />
       <div className="my-recipes-table">
-        <h1>My Recipes</h1>
+        <h1>All Recipes</h1>
         {recipes.length === 0 ? (
           <p>No recipes found.</p>
         ) : (
@@ -63,11 +59,11 @@ const AllRecipes = () => {
             <tbody>
               {recipes.map((recipe) => (
                 <tr key={recipe.id}>
-                  <td>{recipe.title}</td>
-                  <td>{recipe.tag}</td>
+                  <td>{recipe.name}</td>
+                  <td>{recipe.type}</td>
                   <td>
-                    <button onClick={() => handleEdit(recipe.id)} className="edit-btn">
-                      Edit
+                    <button onClick={() => handleBlock(recipe.id)} className="edit-btn">
+                      Block
                     </button>
                     <button
                       onClick={() => handleDelete(recipe.id)}

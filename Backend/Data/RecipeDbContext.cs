@@ -14,8 +14,8 @@ namespace RecipeNest.Data
         // Define your DbSets (tables) here
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<Chef> Chef { get; set; }
-        public DbSet<User> Users { get; set; }
-        public DbSet<UserBlog> UserBlogs { get; set; }
         public DbSet<ChefBlog> ChefBlogs { get; set; }
+        public DbSet<AdminUser> AdminUser { get; set; }
+
     }
 }

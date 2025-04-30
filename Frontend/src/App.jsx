@@ -23,6 +23,15 @@ import Help from './components/Help'; // Component for Help
 import HelpPage from './pages/help-page'; // Component for Help Page
 import Footer from './components/Footer'; // Import Footer
 
+
+//For admin
+
+import AdminLoginPage from './admin-components/admin-login';
+import AdminDashboard from './pages/admin-dashboard'; // Admin Dashboard
+import AllRecipes from './admin-components/all-recipes';  
+import AllBlogs from './admin-components/all-blogs'; 
+import AllChefs from './admin-components/all-chefs'; // Admin All Chefs
+
 function App() {
   return (
     <UserProvider>
@@ -42,6 +51,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/help" element={<Help />} />
           <Route path="/help-page" element={<HelpPage />} />
+
+          <Route path="/admin-login" element={<AdminLoginPage />} />
 
           {/* Protected Routes for the Chef */}
           <Route
@@ -99,6 +110,46 @@ function App() {
             element={
               <ProtectedRoute>
                 <AddBlog />
+              </ProtectedRoute>
+            }
+          />
+
+
+          {/* Protected Routes for the Admin */}
+          <Route
+            path="/admin-dashboard"
+            element={
+              <ProtectedRoute>
+                <AdminDashboard />
+              </ProtectedRoute>
+            }
+          />
+
+<Route
+            path="/all-recipes"
+            element={
+              <ProtectedRoute>
+                <AllRecipes />
+              </ProtectedRoute>
+            }
+          />
+
+<Route
+            path="/all-blogs"
+            element={
+              <ProtectedRoute>
+                <AllBlogs />
+              </ProtectedRoute>
+            }
+          />
+
+
+
+<Route
+            path="/all-chefs"
+            element={
+              <ProtectedRoute>
+                <AllChefs />
               </ProtectedRoute>
             }
           />

@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "RecipeNest.Controllers.AdminAuthController",
+    "Method": "AdminUserLogin",
+    "RelativePath": "api/AdminAuth/adminlogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RecipeNest.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RecipeNest.Controllers.AuthController",
     "Method": "ChefLogin",
     "RelativePath": "api/Auth/login",
